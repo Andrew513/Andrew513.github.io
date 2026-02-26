@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GPU and high-performance computing project by Cho-Yun Lei.">
+    <title>GPU & HPC | Cho-Yun Lei</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar"><div class="nav-container"><div class="logo"><span class="logo-icon">{'C'}</span><span class="logo-text">Cho-Yun Lei</span></div><div class="nav-menu"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="portfolio.html" class="nav-link active">Projects</a><a href="contact.html" class="nav-link">Contact</a></div><div class="nav-social">
+                <a href="https://github.com/Andrew513" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com/in/lcy-profile" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn icon">
+                </a>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div></div></nav>
+
+<section class="page-header">
+    <div class="container">
+        <h1>GPU & High-Performance Computing</h1>
+        <p>Rice University | CUDA, OpenMP, MPI, and performance analysis</p>
+    </div>
+</section>
+
+<section class="project-detail">
+    <div class="container">
+        <div class="project-meta"><span class="tag">CUDA</span><span class="tag">OpenMP</span><span class="tag">MPI</span><span class="tag">HPCToolkit</span></div>
+        <h2>Overview</h2>
+        <p>This project explored parallel algorithm design and scalability behavior across multicore CPU and GPU environments, with emphasis on memory hierarchy effects and synchronization overhead.</p>
+
+        <h2>What I Implemented</h2>
+        <ul class="project-list">
+            <li>Dense linear algebra kernels in C++/OpenMP and CUDA for n=8000 class workloads.</li>
+            <li>CUDA kernels for flagging, prefix-sum scan, and scatter over 536M elements.</li>
+            <li>A 2.5D distributed matrix multiplication design using MPI 3D Cartesian process grids.</li>
+        </ul>
+
+        <h2>Performance Work</h2>
+        <ul class="project-list">
+            <li>Profiled kernels with HPCToolkit to isolate synchronization and memory bottlenecks.</li>
+            <li>Analyzed scaling limits under bandwidth-bound and communication-heavy regimes.</li>
+            <li>Modeled compute vs. communication tradeoffs for architecture-aware optimization decisions.</li>
+        </ul>
+
+        <p><a class="btn btn-primary" href="portfolio.html">Back to Projects</a></p>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 Cho-Yun Lei. All rights reserved.</p></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

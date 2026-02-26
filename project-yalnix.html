@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yalnix operating system kernel project by Cho-Yun Lei.">
+    <title>Yalnix OS Kernel | Cho-Yun Lei</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar"><div class="nav-container"><div class="logo"><span class="logo-icon">{'C'}</span><span class="logo-text">Cho-Yun Lei</span></div><div class="nav-menu"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="portfolio.html" class="nav-link active">Projects</a><a href="contact.html" class="nav-link">Contact</a></div><div class="nav-social">
+                <a href="https://github.com/Andrew513" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com/in/lcy-profile" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn icon">
+                </a>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div></div></nav>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Yalnix Operating System Kernel</h1>
+        <p>Rice University | Unix-like kernel implementation in C</p>
+    </div>
+</section>
+
+<section class="project-detail">
+    <div class="container">
+        <div class="project-meta"><span class="tag">C</span><span class="tag">Operating Systems</span><span class="tag">Virtual Memory</span><span class="tag">Concurrency</span></div>
+        <h2>Overview</h2>
+        <p>I designed and implemented core operating system mechanisms for a Unix-like teaching kernel, focusing on process lifecycle management, interrupt-driven control flow, and memory subsystem correctness.</p>
+
+        <h2>What I Built</h2>
+        <ul class="project-list">
+            <li>Process scheduling and context switching infrastructure.</li>
+            <li>System call interface and trap/interrupt handling path.</li>
+            <li>Virtual memory subsystem with custom page tables and TLB management.</li>
+        </ul>
+
+        <h2>Engineering Focus</h2>
+        <ul class="project-list">
+            <li>Kernel correctness across multi-threaded and multi-process workloads.</li>
+            <li>Defensive debugging for race conditions and memory mapping edge cases.</li>
+            <li>Performance validation with profiling-oriented stress scenarios.</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <p>The project delivered a stable kernel capable of handling process orchestration, memory translation, and user-kernel transitions with reliable behavior under concurrent workload execution.</p>
+
+        <p><a class="btn btn-primary" href="portfolio.html">Back to Projects</a></p>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 Cho-Yun Lei. All rights reserved.</p></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

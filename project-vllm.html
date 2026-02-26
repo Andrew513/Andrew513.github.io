@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LLM Prefix Sharing and KV-cache simulator case study by Cho-Yun Lei.">
+    <title>LLM Prefix Sharing Simulator | Cho-Yun Lei</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar"><div class="nav-container"><div class="logo"><span class="logo-icon">{'C'}</span><span class="logo-text">Cho-Yun Lei</span></div><div class="nav-menu"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="portfolio.html" class="nav-link active">Projects</a><a href="contact.html" class="nav-link">Contact</a></div><div class="nav-social">
+                <a href="https://github.com/Andrew513" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com/in/lcy-profile" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn icon">
+                </a>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div></div></nav>
+
+<section class="page-header">
+    <div class="container">
+        <h1>LLM Prefix Sharing & KV-Cache Simulator</h1>
+        <p>Rice University | Systems for efficient LLM serving</p>
+    </div>
+</section>
+
+<section class="project-detail">
+    <div class="container">
+        <div class="project-meta"><span class="tag">C++</span><span class="tag">Python</span><span class="tag">vLLM Internals</span><span class="tag">Performance Modeling</span></div>
+        <h2>Overview</h2>
+        <p>I modified vLLM internals to build a CPU-based simulator that preserved batching, scheduling, and KV-cache semantics while bypassing GPU execution. This setup enabled fast and controlled workload experiments for cache behavior analysis.</p>
+
+        <h2>Problem</h2>
+        <p>In mixed enterprise-style LLM workloads, prefix reuse patterns are uneven and can lead to avoidable computation when cache policy is not tuned for request distribution.</p>
+
+        <h2>What I Implemented</h2>
+        <ul class="project-list">
+            <li>Built a simulation workflow that replays production-like traffic against vLLM-like scheduling and cache behavior.</li>
+            <li>Modeled prefix-sharing under mixed distributions to analyze locality, memory pressure, and scheduling side effects.</li>
+            <li>Designed and evaluated a custom KV-cache eviction policy focused on improving prefix retention efficiency.</li>
+        </ul>
+
+        <h2>Results</h2>
+        <ul class="project-list">
+            <li>Improved prefix cache hit rate by approximately 10%.</li>
+            <li>Reduced redundant computation under mixed workloads.</li>
+            <li>Produced reproducible experiments to compare cache-locality and throughput tradeoffs.</li>
+        </ul>
+
+        <p><a class="btn btn-primary" href="portfolio.html">Back to Projects</a></p>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 Cho-Yun Lei. All rights reserved.</p></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programmable network load balancing project by Cho-Yun Lei.">
+    <title>Programmable Network Load Balancing | Cho-Yun Lei</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar"><div class="nav-container"><div class="logo"><span class="logo-icon">{'C'}</span><span class="logo-text">Cho-Yun Lei</span></div><div class="nav-menu"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="portfolio.html" class="nav-link active">Projects</a><a href="contact.html" class="nav-link">Contact</a></div><div class="nav-social">
+                <a href="https://github.com/Andrew513" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com/in/lcy-profile" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn icon">
+                </a>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div></div></nav>
+
+<section class="page-header">
+    <div class="container">
+        <h1>Programmable Network Load Balancing</h1>
+        <p>Rice University | P4, ECMP, and flowlet switching</p>
+    </div>
+</section>
+
+<section class="project-detail">
+    <div class="container">
+        <div class="project-meta"><span class="tag">P4</span><span class="tag">Flowlet Switching</span><span class="tag">Mininet</span><span class="tag">Scapy</span></div>
+        <h2>Overview</h2>
+        <p>This project focused on reducing packet reordering while preserving multipath utilization by implementing flowlet-aware forwarding in a programmable data plane.</p>
+
+        <h2>What I Built</h2>
+        <ul class="project-list">
+            <li>Implemented flowlet switching using P4 register arrays and inter-packet timing gap logic.</li>
+            <li>Built reproducible Mininet testbeds with heterogeneous path delays for realistic behavior validation.</li>
+            <li>Added dataplane-level monitoring through per-port counters and query-packet collection workflows.</li>
+        </ul>
+
+        <h2>Outcome</h2>
+        <ul class="project-list">
+            <li>Reduced packet reordering compared with per-packet load balancing strategies.</li>
+            <li>Maintained multipath usage with improved forwarding stability under load.</li>
+            <li>Established repeatable test and telemetry pipelines for network-function evaluation.</li>
+        </ul>
+
+        <p><a class="btn btn-primary" href="portfolio.html">Back to Projects</a></p>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2026 Cho-Yun Lei. All rights reserved.</p></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

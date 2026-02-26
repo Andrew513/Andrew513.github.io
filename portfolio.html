@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project portfolio of Cho-Yun Lei featuring full-stack, backend, and systems case studies.">
+    <title>Projects | Cho-Yun Lei</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">{'C'}</span>
+                <span class="logo-text">Cho-Yun Lei</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="portfolio.html" class="nav-link active">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://github.com/Andrew513" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com/in/lcy-profile" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn icon">
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Project Portfolio</h1>
+            <p>Independent case-study pages for each project.</p>
+        </div>
+    </section>
+
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="systems">Systems</button>
+                <button class="filter-btn" data-filter="hpc">HPC</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="ml">AI/ML</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="systems">
+                    <div class="portfolio-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/evzHeMgbKOg/download?force=true&w=1400" alt="LLM serving project cover image" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="project-vllm.html" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>LLM Prefix Sharing Simulator (vLLM)</h3>
+                        <p>Built a CPU-based serving simulator and improved prefix cache hit rate by ~10% with a custom eviction policy.</p>
+                        <div class="portfolio-tech"><span>C++</span><span>Python</span><span>vLLM</span><span>KV Cache</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="systems">
+                    <div class="portfolio-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/MPKQiDpMyqU/download?force=true&w=1400" alt="Operating system kernel project cover image" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="project-yalnix.html" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Yalnix Operating System Kernel</h3>
+                        <p>Implemented a Unix-like kernel with process scheduling, interrupts, system calls, and virtual memory management.</p>
+                        <div class="portfolio-tech"><span>C</span><span>OS Kernel</span><span>TLB</span><span>Scheduling</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="hpc">
+                    <div class="portfolio-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/Zb7-ie9rT6Y/download?force=true&w=1400" alt="GPU and high-performance computing project cover image" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="project-hpc.html" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>GPU & High-Performance Computing</h3>
+                        <p>Developed and profiled CUDA/OpenMP/MPI workloads with scalability and bottleneck analysis.</p>
+                        <div class="portfolio-tech"><span>CUDA</span><span>OpenMP</span><span>MPI</span><span>HPCToolkit</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ml">
+                    <div class="portfolio-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/z44OQthRJNU/download?force=true&w=1400" alt="Rail track obstacle detection project cover image" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="project-rail-obstacle.html" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Rail Track Obstacle Detection</h3>
+                        <p>Designed a YOLO + UNet perception pipeline and improved detection accuracy by 30%.</p>
+                        <div class="portfolio-tech"><span>YOLO</span><span>UNet</span><span>Computer Vision</span><span>Real-time</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="systems">
+                    <div class="portfolio-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/vE5AKQRUs7c/download?force=true&w=1400" alt="Programmable network load balancing project cover image" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="project-p4-load-balancer.html" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Programmable Network Load Balancing</h3>
+                        <p>Implemented flowlet switching in P4 and validated forwarding behavior in Mininet under heterogeneous delays.</p>
+                        <div class="portfolio-tech"><span>P4</span><span>Mininet</span><span>Flowlet</span><span>Scapy</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="backend">
+                    <div class="portfolio-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/uxT4OAyNuEU/download?force=true&w=1400" alt="URL shortener backend project cover image" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="project-shortking.html" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>ShortKing URL Shortener</h3>
+                        <p>Built a secure Spring Boot microservice platform with OAuth2, analytics, and GCP Cloud Run deployment.</p>
+                        <div class="portfolio-tech"><span>Java</span><span>Spring Boot</span><span>MongoDB</span><span>GCP</span></div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="backend">
+                    <div class="portfolio-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/oxwPGUnsfpE/download?force=true&w=1400" alt="Database system implementation project cover image" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <a href="project-db-engine.html" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Database System Implementation</h3>
+                        <p>Built a disk-backed relational engine with buffer management, B+ tree indexing, and TPC-H style query execution.</p>
+                        <div class="portfolio-tech"><span>C++</span><span>B+ Tree</span><span>Buffer Manager</span><span>Query Optimization</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cho-Yun Lei</h4>
+                    <p>New Grad Software Engineer focused on full-stack, backend, and systems development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://linkedin.com/in/lcy-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/Andrew513" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cho-Yun Lei. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

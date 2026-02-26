@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cho-Yun Lei | New grad software engineer focused on full-stack, backend, and systems development.">
+    <title>Cho-Yun Lei | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/icon.jpeg" alt="Avatar" class="logo-icon">
+                <span class="logo-text">Cho-Yun Lei</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="portfolio.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://github.com/Andrew513" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com/in/lcy-profile" class="nav-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn icon">
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-kicker">Hello, I'm Cho-Yun.</p>
+                <h1 class="hero-title">
+                    <span>Software</span>
+                    <span>Engineer</span>
+                </h1>
+                <p class="hero-subtitle">Full-Stack, Backend, and Systems</p>
+                <p class="hero-description">I build reliable systems that scale, from high-throughput backend services to operating systems and performance-critical computing projects.</p>
+                <div class="hero-buttons">
+                    <a href="portfolio.html" class="btn btn-primary">View Projects</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="portrait-wrap">
+                    <div class="portrait-ring">
+                        <div class="portrait-inner">
+                            <img src="assets/profile.jpg" alt="Cho-Yun Lei portrait" class="profile-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="card-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/evzHeMgbKOg/download?force=true&w=1400" alt="Colorful code screen for LLM simulator project" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>LLM Prefix Sharing Simulator (vLLM)</h3>
+                        <p>Built a CPU-based vLLM simulator and improved prefix-hit rate by about 10% through a custom KV-cache eviction policy.</p>
+                        <div class="tech-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">vLLM</span>
+                            <span class="tag">Performance Modeling</span>
+                        </div>
+                        <p style="margin-top: 1rem;"><a href="project-vllm.html" class="portfolio-link-inline">Read case study</a></p>
+                    </div>
+                </div>
+
+                <div class="featured-card">
+                    <div class="card-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/MPKQiDpMyqU/download?force=true&w=1400" alt="Terminal screen for operating system kernel project" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Yalnix Operating System Kernel</h3>
+                        <p>Implemented a Unix-like kernel in C with scheduling, memory management, interrupts, and system call infrastructure.</p>
+                        <div class="tech-tags">
+                            <span class="tag">C</span>
+                            <span class="tag">OS</span>
+                            <span class="tag">Virtual Memory</span>
+                        </div>
+                        <p style="margin-top: 1rem;"><a href="project-yalnix.html" class="portfolio-link-inline">Read case study</a></p>
+                    </div>
+                </div>
+
+                <div class="featured-card">
+                    <div class="card-image">
+                        <img class="placeholder-image" src="https://unsplash.com/photos/Zb7-ie9rT6Y/download?force=true&w=1400" alt="Graphics card close-up for GPU and HPC project" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>GPU & High-Performance Computing</h3>
+                        <p>Developed CUDA/OpenMP/MPI workloads, profiled kernel bottlenecks, and analyzed compute-communication tradeoffs.</p>
+                        <div class="tech-tags">
+                            <span class="tag">CUDA</span>
+                            <span class="tag">MPI</span>
+                            <span class="tag">OpenMP</span>
+                            <span class="tag">HPCToolkit</span>
+                        </div>
+                        <p style="margin-top: 1rem;"><a href="project-hpc.html" class="portfolio-link-inline">Read case study</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-button">
+                <a href="portfolio.html" class="btn btn-primary">See All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        <li>C / C++</li>
+                        <li>Go</li>
+                        <li>Python</li>
+                        <li>Java / PHP / TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Systems & Backend</h3>
+                    <ul class="skill-list">
+                        <li>Distributed Systems</li>
+                        <li>Microservices & REST APIs</li>
+                        <li>Concurrency & Performance Tuning</li>
+                        <li>Database & Query Optimization</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul class="skill-list">
+                        <li>Linux, Docker, Kubernetes</li>
+                        <li>GCP / Cloud Run / Cloud Build</li>
+                        <li>Kafka, PostgreSQL, MongoDB</li>
+                        <li>Git, CI/CD, Swagger, HPCToolkit</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Open to New Grad Software Engineering Roles</h2>
+            <p>Let's build production-grade systems together.</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Contact Me</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cho-Yun Lei</h4>
+                    <p>New Grad Software Engineer focused on full-stack, backend, and systems development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://linkedin.com/in/lcy-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/Andrew513" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cho-Yun Lei. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
